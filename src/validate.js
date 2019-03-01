@@ -4,6 +4,7 @@ const ajv = new Ajv({
   errorDataPath: "property",
   allErrors: true,
   multipleOfPrecision: 8,
+  unknownFormats: false
 });
 // add custom formats
 ajv.addFormat(
